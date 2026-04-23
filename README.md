@@ -11,7 +11,7 @@ This project implements a pipeline that:
 
 - Loads and normalizes training and test data
 - Builds two neural network architectures: **baseline** and **deeper**
-- Trains models using **stochastic gradient descent with momentum**
+- Trains models using **mini-batch stochastic gradient descent with momentum** and **backpropagation**
 - Evaluates model performance using **accuracy and average loss**
 - Generates **top-3 class predictions** for selected test images
 
@@ -32,6 +32,7 @@ This project implements a pipeline that:
 ### Training
 - **Loss function:** Cross-entropy  
 - **Optimizer:** SGD with momentum  
+- Uses **backpropagation** to compute gradients and update model weights  
 - Epoch-wise reporting of **training accuracy and loss**
 
 ### Evaluation
